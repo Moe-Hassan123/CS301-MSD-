@@ -1,0 +1,36 @@
+<!doctype html>
+<html  lang="en-us">
+    <head>
+    <meta charset="utf-8">
+    <title> Person Address </title>
+    <script>
+    function MakeAddress(){
+        let Name = document.getElementById('NameIputBox').value;
+        let Street = document.getElementById('StreetIputBox').value;
+        let City = document.getElementById('CityIputBox').value;
+        let State= document.getElementById('StateIputBox').value;
+        let ZipCode= document.getElementById('ZipcodeIputBox').value;
+        let Address = Name +","+ Street + City +","+ State + ZipCode;
+
+        document.getElementById('outputName').innerHTML= Address;
+    }
+
+    </script>
+    </head>
+    <body>  
+    
+    Name <input type="text" id="NameIputBox"> <br>
+    Street <input type="text" id="StreetIputBox"><br>
+    City <input type="text" id="CityIputBox">
+    State <input type="text" id="StateIputBox">
+    Zipcode <input type="text" id="ZipcodeIputBox">
+    <button type="button" onclick="MakeAddress()">TheAddress</button>
+
+<div id="outputName"></div>
+<div id="outputStreet"></div>
+<div id="outputCity"></div>
+<div id="outputState"></div>
+<div id="outputZipcode"></div>
+
+</body>
+</html>

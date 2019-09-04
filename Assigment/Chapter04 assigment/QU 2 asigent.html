@@ -1,0 +1,23 @@
+<!doctype HTML>
+<html lang = "en-us">
+<head>
+<meta charset="utf-8">
+<title>Storr</title>
+<script>
+    
+    function applyScripture() {
+        let name = document.getElementById('nameInputBox').value;
+        let scripture = "once abon time, aperson called ,"  +  name  + " had avery buttiful storry,"  +  name 
+        + ", alot of money, and his dreem become true.";
+        document.getElementById('outputDiv').innerHTML = scripture;
+        
+    }
+</script>
+</head>
+<body>
+ Please inter your name to cmoplet the story..... <input type="text" id="nameInputBox">
+    <button type="button"onclick="applyScripture()">Story</button>
+    <div id="outputDiv"> </div>
+</body>
+</html>
+
